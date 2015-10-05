@@ -1,2 +1,2 @@
 # MobileIconGenerator
-Mobile Icon &amp; Splashscreens Generator
+PHP Mobile Icon &amp; Splashscreens Generator
