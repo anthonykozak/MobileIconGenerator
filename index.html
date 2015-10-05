@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Exoa Mobile Icon Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+  <![endif]-->
+
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="img/favicon.png">
+  
+</head>
+
+<body>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-4 column">
+			<h2>Mobile Icon Generator (Jpg)</h2>
+			<form >
+				<div class="form-group">
+					 <label for="exampleInputFile">Image input (jpg or png)</label>
+					 <input type="file" class="fileInput" id="fileInput1">
+						 <input type="hidden" name="inputtype" value="mobileicon"/>
+					 
+				</div>
+				<div class="form-group">
+					 <label for="iconFormats">All Formats you need</label>
+					 <textarea class="form-control iconFormats" name="iconFormats" style="height:350px;">
+1024x1024
+512x512
+256x256
+152x152
+144x144
+128x128
+120x120
+114x114
+96x96
+76x76
+72x72
+57x57
+48x48
+36x36
+32x32
+16x16
+</textarea>
+				</div>
+				
+				<div class="checkbox">
+					 <label><input type="radio" name="iconType" value="resize" checked="checked"> Resize Only</label><br/> 
+					 <label><input type="radio" name="iconType" value="cropW"> Resize And Crop</label><br/>
+				</div> 
+				<button type="submit" class="btn btn-default">Submit</button>
+			</form>
+		</div>
+					 
+					 
+					 
+					 
+					 
+					 
+		<div class="col-md-4 column">
+			<h2>Mobile Splashscreen Generator</h2>
+			<form >
+				<div class="form-group">
+					 <label for="exampleInputFile">Image input (jpg or png)</label>
+					 <input type="file" class="fileInput">
+					<input type="hidden" name="inputtype" value="mobileicon"/>
+				</div>
+				<div class="form-group">
+					 <label for="iconFormats">All Formats you need</label>
+					 <textarea class="form-control iconFormats" name="iconFormats" style="height:350px;">
+2048x1536
+2208x1242
+1334x750
+1136x640
+1024x768
+1024x500
+960x640
+480x320
+320x240
+432x163
+320x180
+180x120
+</textarea>
+				</div>
+				
+				<div class="checkbox">
+					 <label><input type="radio" name="iconType" value="resize" > Resize Only</label><br/>
+					 <label><input type="radio" name="iconType" value="cropW" checked="checked"> Resize And Crop</label><br/>
+				</div> 
+				<button type="submit" class="btn btn-default">Submit</button>
+			</form>
+		</div>
+					 
+					 
+					 
+		<div class="col-md-4 column">
+			<h2>.ico Generator</h2>
+			<form >
+				<div class="form-group">
+					 <label for="iconFormats">Image input (jpg or png)</label>
+					 <input type="file" class="fileInput">
+					<input type="hidden" name="inputtype" value="favicon"/>
+				</div>
+				<div class="form-group">
+					 <label for="iconFormats">All Formats you need</label>
+					 <textarea class="form-control iconFormats" name="iconFormats" style="height:350px;">
+16x16
+32x32
+64x64
+</textarea>
+				</div>
+				
+				<div class="checkbox">
+					 <label><input type="radio" name="iconType" value="resize" > Resize Only</label><br/>
+					 <label><input type="radio" name="iconType" value="cropW" checked="checked"> Resize And Crop</label><br/>
+				</div> 
+				<button type="submit" class="btn btn-default">Submit</button>
+			</form>
+		</div>
+	</div>
+</div>
+<div id="loading-div-background">
+    <div id="loading-div" class="ui-corner-all" >
+      <img style="height:80px;margin:30px;" src="img/loading.gif" alt="Loading.."/>
+      <h2 style="color:gray;font-weight:normal;">Please wait....</h2>
+     </div>
+</div>
+					 
+					 
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
