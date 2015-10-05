@@ -1,7 +1,8 @@
 <?php
 require 'class-php-ico.php';
 
-$rootUrl = 'http://'.$_SERVER['SERVER_ADDR'].dirname($_SERVER['REQUEST_URI']).'/';
+$rootUrl = 'http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['REQUEST_URI']).'/';
+
 $uploadDirName = 'uploads/';
 
 $data = array();
@@ -28,7 +29,7 @@ else if(isset($_REQUEST['inputtype']) && $_REQUEST['inputtype'] == 'favicon')
 {
 	$data = array('success' => 'Form was submitted', 'formData' => $_POST);
 	$type = $_POST['type'];
-	$rootUrl = 'http://'.$_SERVER['SERVER_ADDR'].dirname($_SERVER['REQUEST_URI']).'/';
+
 	$filepath = $_POST['filenames'][0];
 	$filenameWE = pathinfo($filepath, PATHINFO_FILENAME);
 	$fileurl = $rootUrl . $filepath;
